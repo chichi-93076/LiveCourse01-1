@@ -157,6 +157,7 @@ img {
 
 .main .content {
   width: 640px;
+  margin-bottom: 100px;
 }
 
 .main .content .productList {
@@ -165,6 +166,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .main .content .productList .productListCard {
@@ -232,10 +234,6 @@ img {
   font-weight: bold;
 }
 
-.main .content .pagination {
-  margin-top: 30px;
-}
-
 .main .content .pagination .pagination-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,32 +241,26 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  font-size: 20px;
 }
 
 .main .content .pagination .pagination-body li {
   width: 60px;
-  height: 60px;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.main .content .pagination .pagination-body li .NotSelectd {
-  color: #3F5D45;
-  background-color: #EAF0ED;
-}
-
-.main .content .pagination .pagination-body li .Selected {
-  background-color: #3F5D45;
-  color: #EAF0ED;
+  border: 1px solid #EAF0ED;
 }
 
 .main .content .pagination .pagination-body li a {
+  padding: 18px;
   display: block;
   text-align: center;
-  width: 100%;
-  padding: 16px 0 16px 0;
   text-decoration: none;
-  border: 1px solid #EAF0ED;
-  color: #3F5D45;
+}
+
+.main .content .pagination .pagination-body .active {
+  background-color: #3F5D45;
+}
+
+.main .content .pagination .pagination-body .active a {
+  color: #EAF0ED;
 }
 /*# sourceMappingURL=style.css.map */
